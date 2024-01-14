@@ -1,6 +1,7 @@
 import { RouteObject } from "react-router-dom"
 import { HomeLayout, AuthLayout } from "components"
 import { PATH } from "constants"
+import { Angle, Direction, Login, Register } from "pages"
 
 export const router: RouteObject[] = [
     {
@@ -8,9 +9,11 @@ export const router: RouteObject[] = [
         children: [
             {
                 path: PATH.angle,
+                element: <Angle/>
             },
             {
                 path: PATH.direction,
+                element: <Direction/>
             },
         ]
     },
@@ -19,9 +22,11 @@ export const router: RouteObject[] = [
         children: [
             {
                 path: PATH.login,
+                element: <Login/>
             },
             {
                 path: PATH.register,
+                element: <Register/>
             },
         ]
     }
