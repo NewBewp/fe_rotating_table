@@ -1,4 +1,4 @@
-import { RouteObject } from "react-router-dom"
+import { Navigate, RouteObject } from "react-router-dom"
 import { HomeLayout, AuthLayout } from "components"
 
 import { Angle, Direction, Login, Register } from "pages"
@@ -16,6 +16,10 @@ export const router: RouteObject[] = [
                 path: PATH.direction,
                 element: <Direction/>
             },
+            {
+                path: '/',
+                element: <Navigate to={PATH.angle} />,
+              },
         ]
     },
     {
