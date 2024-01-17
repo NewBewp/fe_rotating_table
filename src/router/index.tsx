@@ -1,7 +1,8 @@
 import { RouteObject } from "react-router-dom"
 import { HomeLayout, AuthLayout } from "components"
-import { PATH } from "constants"
+
 import { Angle, Direction, Login, Register } from "pages"
+import { PATH } from "../constants"
 
 export const router: RouteObject[] = [
     {
